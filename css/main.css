@@ -265,7 +265,7 @@ input[type="submit"]:focus {
 
 .title-block .name-container .logos-container .logo5 {
     bottom: -50px;
-    right: -80px;
+    right: -10px;
     transform: translate(50%, 50%) scale(0.7);
 }
 
