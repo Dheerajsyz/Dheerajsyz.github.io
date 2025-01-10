@@ -30,7 +30,24 @@
 /* FontAwesome Free Icons Font */
 @import url('./fonts/fontawesome-free-5.12.1-web/css/all.min.css');
 
+/* Wave emoji animation */
+.wave-emoji {
+    display: inline-block;
+    font-size: 1.5em;
+    transform-origin: 70% 70%; /* Adjust wave pivot */
+    animation: wave-animation 2s infinite; /* Loop animation */
+}
 
+/* Keyframes for wave animation */
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
 /* ------------------------------------------------------------
 2. General Styles
 ------------------------------------------------------------ */
