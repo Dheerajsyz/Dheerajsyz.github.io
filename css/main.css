@@ -30,24 +30,7 @@
 /* FontAwesome Free Icons Font */
 @import url('./fonts/fontawesome-free-5.12.1-web/css/all.min.css');
 
-/* Wave emoji animation */
-.wave-emoji {
-    display: inline-block;
-    font-size: 1.5em;
-    transform-origin: 70% 70%; /* Adjust wave pivot */
-    animation: wave-animation 2s infinite; /* Loop animation */
-}
 
-/* Keyframes for wave animation */
-@keyframes wave-animation {
-    0% { transform: rotate(0deg); }
-    10% { transform: rotate(14deg); }
-    20% { transform: rotate(-8deg); }
-    30% { transform: rotate(14deg); }
-    40% { transform: rotate(-4deg); }
-    50% { transform: rotate(10deg); }
-    100% { transform: rotate(0deg); }
-}
 /* ------------------------------------------------------------
 2. General Styles
 ------------------------------------------------------------ */
@@ -224,6 +207,78 @@ input[type="submit"]:focus {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
+/* Wave emoji animation */
+.wave-emoji {
+    display: inline-block;
+    font-size: 1.5em;
+    transform-origin: 70% 70%; /* Adjust wave pivot */
+    animation: wave-animation 2s infinite; /* Loop animation */
+}
+
+/* Keyframes for wave animation */
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Container for the name and logos */
+.name-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Logos container */
+.logos-container {
+    position: relative;
+}
+
+/* Base logo styling */
+.logo {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+}
+
+/* Individual logo positions (splash effect) */
+.logo1 {
+    top: -50px;
+    left: -50px;
+}
+
+.logo2 {
+    top: -80px;
+    right: -60px;
+}
+
+.logo3 {
+    top: 20px;
+    right: -80px;
+}
+
+.logo4 {
+    bottom: -40px;
+    left: -70px;
+}
+
+.logo5 {
+    bottom: -70px;
+    right: -30px;
+}
+
+.logo6 {
+    top: 50px;
+    left: 90px;
+}
+
 
 
 
