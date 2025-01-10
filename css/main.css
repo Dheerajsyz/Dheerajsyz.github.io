@@ -229,8 +229,8 @@ input[type="submit"]:focus {
 
 /* Ensure the .logo class is applied */
 .title-block .name-container .logos-container .logo {
-    width: 30px; /* Adjusted size */
-    height: 30px;
+    width: 50px; /* Adjusted size */
+    height: 50px;
     position: absolute; /* Enable precise positioning */
     opacity: 0.6; /* Fading effect */
     filter: blur(1px); /* Adds a soft blur */
