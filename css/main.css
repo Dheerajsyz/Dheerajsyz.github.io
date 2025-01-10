@@ -227,73 +227,62 @@ input[type="submit"]:focus {
     100% { transform: rotate(0deg); }
 }
 
-/* Container for the name and logos */
-.name-container {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-/* Logos container */
-.logos-container {
-    position: relative;
-}
-
-/* Base logo styling */
-.logo {
-    width: 20px; /* Small size for fading effect */
+/* Ensure the .logo class is applied */
+.title-block .name-container .logos-container .logo {
+    width: 20px; /* Adjusted size */
     height: 20px;
-    position: absolute;
+    position: absolute; /* Enable precise positioning */
     opacity: 0.6; /* Fading effect */
-    filter: blur(1px); /* Softens the logo */
-    transform: scale(0.8); /* Makes logos smaller */
-    transition: all 0.3s ease-in-out;
+    filter: blur(1px); /* Adds a soft blur */
+    transform: scale(0.8); /* Slightly smaller for subtlety */
+    transition: all 0.3s ease-in-out; /* Smooth animations */
 }
 
-/* Individual logo positions (splash effect radiating outward) */
-.logo1 {
+/* Position each logo for a radiating effect */
+.title-block .name-container .logos-container .logo1 {
     top: -40px;
     left: -30px;
     transform: translate(-50%, -50%) scale(0.7);
 }
 
-.logo2 {
+.title-block .name-container .logos-container .logo2 {
     top: -60px;
     right: -40px;
     transform: translate(50%, -50%) scale(0.8);
 }
 
-.logo3 {
+.title-block .name-container .logos-container .logo3 {
     top: 10px;
     right: -60px;
     transform: translate(50%, 50%) scale(0.6);
 }
 
-.logo4 {
+.title-block .name-container .logos-container .logo4 {
     bottom: -30px;
     left: -50px;
     transform: translate(-50%, 50%) scale(0.8);
 }
 
-.logo5 {
+.title-block .name-container .logos-container .logo5 {
     bottom: -50px;
     right: -20px;
     transform: translate(50%, 50%) scale(0.7);
 }
 
-.logo6 {
+.title-block .name-container .logos-container .logo6 {
     top: 40px;
     left: 80px;
     transform: translate(-50%, 50%) scale(0.9);
 }
 
-/* Fading effect */
-.name-container:hover .logo {
+/* Hover effect to brighten and enlarge icons */
+.title-block .name-container:hover .logo {
     opacity: 1;
     transform: scale(1) translate(0, 0);
-    filter: blur(0);
+    filter: blur(0); /* Removes blur */
     transition: all 0.5s ease-in-out;
 }
+
 
 
 
